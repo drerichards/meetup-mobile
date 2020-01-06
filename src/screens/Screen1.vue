@@ -1,26 +1,19 @@
 <template>
   <view>
     <text class="text-color-primary">{{title}}</text>
-    <Hello />
   </view>
 </template>
 
 <script>
-import Hello from "../components/Hello";
-
 export default {
-  components: {
-    Hello
-  },
   data() {
-    return { title: "My app" };
+    return { title: "Screen 1" };
   }
 };
 </script>
 
 <style>
 .text-color-primary {
-  text-align: center;
   color: blue;
 }
 </style>
