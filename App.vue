@@ -1,8 +1,7 @@
 <template>
-  <view  class="container">
-    <HomeScreen v-if="activeScreen === 'Home'" />
-    <Screen1 v-if="activeScreen === 'Screen1'" />
-    <button title="To Screen 1" :on-press="() => {navigate('Screen1')}" />
+  <view class="container">
+    <HomeScreen v-if="activeScreen === 'Home'" :navigate="navigate" />
+    <Screen1 v-if="activeScreen === 'Screen1'" :navigate="navigate" />
   </view>
 </template>
 
