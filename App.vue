@@ -1,31 +1,13 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">{{title}}</text>
-    <Hello />
-  </view>
+  <HomeScreen />
 </template>
 
 <script>
-import Hello from "./src/components/Hello";
+import HomeScreen from "./src/screens/HomeScreen";
 
 export default {
   components: {
-    Hello
-  },
-  data() {
-    return { title: "My app" };
+    HomeScreen
   }
 };
 </script>
-
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.text-color-primary {
-  color: blue;
-}
-</style>
