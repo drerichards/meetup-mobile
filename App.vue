@@ -1,8 +1,22 @@
 <template>
   <view class="container">
-    <text class="text-color-primary"></text>
+    <text class="text-color-primary">{{title}}</text>
+    <Hello />
   </view>
 </template>
+
+<script>
+import Hello from "./src/components/Hello";
+
+export default {
+  components: {
+    Hello
+  },
+  data() {
+    return { title: "My app" };
+  }
+};
+</script>
 
 <style>
 .container {
