@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import HomeScreen from "./src/screens/HomeScreen";
-import Screen1 from "./src/screens/Screen1";
+import HomeScreen from "@/screens/HomeScreen";
+import Screen1 from "@/screens/Screen1";
 
 export default {
   components: {
